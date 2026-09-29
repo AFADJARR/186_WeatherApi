@@ -8,9 +8,9 @@ const PORT = 3000;
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/api/lokasi", async (req, res) => {
-  const kota = "jakarta";
+  const kota = "yogyakarta"; 
 
-  const apiKey = "vuCGnH9iR1atdjb9d6NN";
+  const apiKey = "fgLH5YQBcNpNd9UqYxtL";
 
   const url = `https://api.maptiler.com/geocoding/${kota}.json?key=${apiKey}`;
 
